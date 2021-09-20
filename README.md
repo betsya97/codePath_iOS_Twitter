@@ -3,7 +3,7 @@
 
 This is a basic twitter app to read your tweets.
 
-Time spent: **X** hours spent in total
+Time spent: **4.0** hours spent in total
 
 ## User Stories
 
@@ -22,6 +22,7 @@ The following **bonus** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
 ![twitter](https://i.imgur.com/frJ99IM.gif)
+
+## Notes 
+There were similarities between the Flix App in that both projects required the use of tableView cells and API calling. New features I learned in Part 1 of recreating the Twitter app was learning to implement infinite scrolling and scroll up to refresh. This portion of the project was a good refresher on how to begin an app starting from placing an app icon on the home page to the complete functionality. 
