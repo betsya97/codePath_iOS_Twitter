@@ -9,6 +9,10 @@
 import UIKit
 
 class loginViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 
     @IBAction func onLoginButton(_ sender: Any) {
         let myUrl = "https://api.twitter.com/oauth/request_token"//url from API
@@ -22,9 +26,6 @@ class loginViewController: UIViewController {
             print("Could not login")
         })
         
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
