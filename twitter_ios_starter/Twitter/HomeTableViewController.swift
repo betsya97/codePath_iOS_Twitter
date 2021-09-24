@@ -22,8 +22,14 @@ class HomeTableViewController: UITableViewController {
         //to reload tweets, it's set to self because it stays on the same screen
         //#selector needs a function, use fix to add @objc
         myRefreshControl.addTarget(self, action: #selector(loadTweet), for: .valueChanged)
-        tableView.refreshControl = myRefreshControl //connect storyboard to coded variable
+        self.tableView.refreshControl = myRefreshControl //connect storyboard to coded variable
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tableView
+    }
+    
     
     @objc func loadTweet(){ //called from viewLoad to see changes
         //gets triggered at loading time and the second time when user pulls to refresh
