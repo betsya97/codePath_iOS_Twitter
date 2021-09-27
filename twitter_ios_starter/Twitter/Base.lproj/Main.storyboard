@@ -131,13 +131,12 @@
             <objects>
                 <viewController id="AWL-Wq-26s" customClass="TweetViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iP5-22-b42">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="luu-xU-hIG">
-                                <rect key="frame" x="0.0" y="56" width="414" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="luu-xU-hIG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="243"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -148,8 +147,12 @@
                         <color key="tintColor" systemColor="systemBlueColor"/>
                         <constraints>
                             <constraint firstItem="luu-xU-hIG" firstAttribute="leading" secondItem="KiW-Xa-HUj" secondAttribute="leading" id="7Lg-qd-gLS"/>
+                            <constraint firstItem="luu-xU-hIG" firstAttribute="leading" secondItem="KiW-Xa-HUj" secondAttribute="leading" id="F3q-bv-bCr"/>
                             <constraint firstItem="KiW-Xa-HUj" firstAttribute="trailing" secondItem="luu-xU-hIG" secondAttribute="trailing" id="Nh4-0N-KgB"/>
+                            <constraint firstItem="KiW-Xa-HUj" firstAttribute="bottom" secondItem="luu-xU-hIG" secondAttribute="bottom" constant="400" id="On2-Db-hL1"/>
+                            <constraint firstItem="luu-xU-hIG" firstAttribute="top" secondItem="KiW-Xa-HUj" secondAttribute="top" id="p9B-DC-Pdn"/>
                             <constraint firstItem="luu-xU-hIG" firstAttribute="top" secondItem="KiW-Xa-HUj" secondAttribute="top" id="sHW-ez-yDH"/>
+                            <constraint firstItem="luu-xU-hIG" firstAttribute="trailing" secondItem="KiW-Xa-HUj" secondAttribute="trailing" id="xmf-1u-mME"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -183,6 +186,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qee-Yt-Hru">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <color key="barTintColor" systemColor="systemBlueColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -199,11 +203,12 @@
         <!--Navigation Controller-->
         <scene sceneID="Jh5-2k-lSy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bqU-YP-Qyy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="bqU-YP-Qyy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mVO-D1-XIT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <color key="barTintColor" systemColor="systemBlueColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
