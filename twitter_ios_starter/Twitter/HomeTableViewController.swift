@@ -23,11 +23,14 @@ class HomeTableViewController: UITableViewController {
         //#selector needs a function, use fix to add @objc
         myRefreshControl.addTarget(self, action: #selector(loadTweet), for: .valueChanged)
         self.tableView.refreshControl = myRefreshControl //connect storyboard to coded variable
+        
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 150
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.tableView
+        self.loadTweet()
     }
     
     
@@ -112,6 +115,8 @@ class HomeTableViewController: UITableViewController {
             cell.profileImageView.image = UIImage(data: imageData) //set Image to reflect on storyboard
         }
         
+        //cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
+        cell.tweetId = tweetArray[indexPath.row]["id"]
         return cell
     }
 
